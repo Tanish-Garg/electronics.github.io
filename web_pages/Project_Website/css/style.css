@@ -1,0 +1,275 @@
+@import url("../css/fonts.css");
+
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+:root {
+    --text-gray: #3f4954;
+    --text-light: #686666da;
+    --bg-color: #0f0f0f;
+    --white: #ffffff;
+    --midnight: #104f55;
+
+    --Abel: "Abel", cursive;
+    --Anton: "Anton", cursive;
+    --Josefin: "Josefin", cursive;
+    --Lexend: "Lexend", cursive;
+    --Livvic: "Livvic";
+
+    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-gray);
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1 {
+    font-family: var(--Lexend);
+    font-size: 2.5rem;
+    text-align: center;
+}
+h2
+{
+    font-family: var(--Lexend);
+    font-size: 1.8rem;
+}
+h2 {
+    font-family: var(--Lexend);
+}
+
+h3 {
+    font-family: var(--Abel);
+    font-size: 1.3rem;
+}
+
+span {
+    font-family: var(--Abel);
+}
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+ td,  th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+ tr:nth-child(even){background-color: #f2f2f2;}
+
+ tr:hover {background-color: #ddd;}
+
+ th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #4CAF50;
+  color: white;
+}
+button.btn {
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: var(--Livvic);
+    cursor: pointer;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.text-gray {
+    color: var(--text-gray);
+}
+
+p {
+    font-family: var(--Lexend);
+    color: var(--text-light);
+}
+
+/*navbar*/
+
+.nav {
+    background-color: white;
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 10vh;
+    overflow: hidden;
+}
+
+.nav .nav-brand a {
+    padding: 1rem 0;
+    font-size: 1.6rem;
+    display: block;
+    font-family: var(--Lexend);
+}
+
+.nav .nav-menu {
+    justify-content: space-between;
+}
+
+.nav .nav-items {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+.nav .nav-items .nav-link {
+    padding: 1.2rem 0.5rem;
+    font-size: 1.1rem;
+    position: relative;
+    font-family: var(--Abel);
+}
+
+.nav .nav-items .nav-link a {
+    padding: 25px 10px;
+}
+
+.nav .nav-items .nav-link :hover {
+    background-color: #104f55;
+    color: white;
+}
+
+.nav .social {
+    padding: 1.4rem 0;
+}
+
+.nav .social i {
+    padding: 0 0.2rem;
+}
+
+.nav .social i:hover {
+    color: #a1c4fd;
+}
+
+
+/* main site*/
+
+main .site-title {
+    background: url(../assets/Background-image.png);
+    background-size: cover;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+}
+
+main .site-title .site-background {
+    padding: 10rem;
+    text-align: center;
+    color: white;
+}
+
+main .site-title h1,
+h3 {
+    margin: 0.3rem;
+}
+
+main .site-title .btn {
+    margin: 1.8rem;
+    background: var(--sky);
+}
+
+main .site-title .btn:hover {
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+}
+
+
+
+/*footer*/
+
+footer.footer {
+    height: 100%;
+    background: var(--bg-color);
+    position: relative;
+}
+
+footer.footer .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+footer.footer .container>div {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 3rem 0.9rem;
+}
+
+footer.footer .container h2 {
+    color: white;
+}
+
+footer.footer .container .newsletter .form-element {
+    background: black;
+    display: inline-block;
+}
+
+footer.footer .container .newsletter .form-element input {
+    border: none;
+    padding: 0.5rem 0.7rem;
+    background: black;
+    color: white;
+    font-family: var(--Josefin);
+    font-size: 1rem;
+    width: 74%;
+}
+
+footer.footer .container .newsletter .form-element span {
+    background: var(--sky);
+    padding: 0.5rem 0.7rem;
+    cursor: pointer;
+}
+
+footer.footer .container .instagram img {
+    height: 50%;
+    width: 25%;
+    margin: 0.3rem 0.4rem;
+}
+
+footer.footer .container .follow i {
+    color: white;
+    margin: 0.2rem 0.45rem;
+    cursor: pointer;
+}
+
+footer.footer .rights {
+    justify-content: center;
+}
+
+footer.footer .rights span a {
+    font-family: var(--Lexend);
+    color: white;
+}
+
+footer.footer .rights .to-home {
+    font-size: 2rem;
+    position: absolute;
+    color: var(--midnight);
+    top: 50%;
+    right: 6%;
+}
+
+footer.footer .rights .to-home:hover {
+    color: white;
+    cursor: pointer;
+}
+
+table,td,th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
